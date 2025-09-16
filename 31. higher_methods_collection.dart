@@ -23,7 +23,7 @@ void main() {
   // -----------------------------
   // reduce()
   // -----------------------------
-  var sum = numbers.reduce((a, b) => a + b);
+  var sum = numbers.reduce((a, b) => a + b);  // a là giá trị tích luỹ
   print("Sum: $sum"); // 21
 
   var product = numbers.reduce((a, b) => a * b);

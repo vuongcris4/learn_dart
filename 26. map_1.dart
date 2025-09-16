@@ -21,6 +21,9 @@ void main() {
   // 4. Thêm một cặp key-value mới
   person['likesPizza'] = true;
 
+  // Access key không có
+  print(person['davutru']);
+
   // In ra toàn bộ Map sau khi thay đổi
   print('Thông tin đầy đủ: $person');
 }

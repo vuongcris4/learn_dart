@@ -21,7 +21,10 @@ void main() {
   final all = [1, 2, ...?extra];
   print(all); // [1, 2, 3, 4]
 
-  // 4) Gán mặc định cho trường nullable
+  // 4) Gán mặc định cho trường ??= chỉ dùng được với biến có thể gán lại (local var hoặc field non-final).
+	// Nếu p là field final hoặc late final → không dùng được ??=.
+	// Khi đó phải dùng ?? để cung cấp giá trị mặc định khi truy cập, hoặc bỏ final nếu muốn mutable.
+
   p ??= Profile();          // ❌ không hợp lệ: p là 'Profile?' chứ không phải biến nullable? (Xem chú thích)
   // Lưu ý: phép `??=` chỉ dùng trên biến, không trên biểu thức.
 }

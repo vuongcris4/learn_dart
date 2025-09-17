@@ -13,4 +13,11 @@ void main() {
   b = b.toInt();
   print(b); // Ket qua: 4
   print("${b.runtimeType}");
+
+  print(b.toDouble()); // Ket qua: 4.0
+  print("${b.runtimeType}");
+
+  int a = 10;
+  print(a);
+  print("${a.runtimeType}");
 }
